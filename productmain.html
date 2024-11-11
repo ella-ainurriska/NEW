@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>katalog alat tulis chacha</title>
+    <link rel="stylesheet" type="text/css" href="stylmain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="bg-loader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="https://www.instagram.com/ella.ainurriska01"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61553596682709&mibextid=JRoKGi"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://youtube.com/@ellaainurriska?si=PdBuAd8IO7Cx1fxP"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1><a href="indexmain.html">Katalog Alat Tulis Chacha</a></h1>
+            <ul>
+                <li class="active"><a href="indexmain.html">HOME</a></li>
+                <li><a href="aboutmain.html">ABOUT</a></li>
+                <li><a href="productmain.html">PRODUCT</a></li>
+                <li><a href="bukutamumain.php">Buku Tamu</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Selamat Datang di Katalog Alat Tulis Chacha</h2>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h3>Tentang Kami</h3>
+            <p>Assalamualaikum wr.wb, selamat datang di <strong>Katalog Alat Tulis Chacha</strong>. Kami menyediakan berbagai alat tulis yang bermanfaat bagi mahasiswa dan siswa yang suka menulis. Di <strong>"SA Store"</strong>, kamu bisa menemukan berbagai jenis bolpen, binder, dan perlengkapan tulis lainnya dengan harga terjangkau!</p>
+            <p>Ayo, segera cek koleksi kami dan temukan alat tulis favoritmu!</p>
+            <p>Jangan lupa untuk menghubungi media sosial yang tertera ya, teman-teman! Saranghae, wassalamualaikum wr.wb.</p>
+            <p><a href="aboutmain.html"><u>Lihat selengkapnya</u></a></p>
+        </div>
+    </section>
+
+    <!-- Jam Digital -->
+    <h4 align="center" id="tanggal"></h4>
+    <div class="jam_digital" id="jam_digital">
+        <div class="kotak"><p id="jam"></p></div>
+        <div class="kotak"><p id="menit"></p></div>
+        <div class="kotak"><p id="detik"></p></div>
+    </div>
+
+    <script type="text/javascript">
+        var tgl = new Date();
+        document.getElementById("tanggal").innerHTML= "waktu akses"+tgl;
+
+        window.setTimeout("waktu()",1000);
+        function waktu(){
+            var waktu = new Date();
+            setTimeout("waktu()", 1000);
+            document.getElementById("jam").innerHTML = waktu.getHours();
+            document.getElementById("menit").innerHTML = waktu.getMinutes();
+            document.getElementById("detik").innerHTML = waktu.getSeconds();
+        }
+
+        var i=0;
+        function change(){
+            var classJamDigital = document.getElementById("jam_digital");
+            var color =["lightcoral" , "maroon" , "lemonchiffon" , "greenyellow" , "honeydew" , "floralwhite" , "darkturqoise",
+            "lavenderblush" , "linen"];
+
+            classJamDigital.style.backgroundcolor = color[i];
+            i=(i+1)%color.length;
+        }
+        setInterval(change,1000);
+        $(document).ready(function(){
+            $(".bg-loader").hide();
+        })
+    </script>
+
+    <div class="footer">
+        <p><b>Hak Cipta &copy; 2024 Ella Ainurriska</b></p>
+    </div>
+</body>
+</html>

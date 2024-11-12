@@ -7,7 +7,7 @@
 /* bagian atas */
 .medsos {
     padding: 5px 0;
-    background-color: #86290c;
+    background-color: #992a08;
 }
 
 a {
@@ -35,7 +35,7 @@ a {
 header h1 {
     float: left;
     padding: 15px 0;
-    color: #86290c;
+    color: #992a08;
     font-size: 25px;
     word-spacing: 2px;
 }
@@ -54,14 +54,14 @@ header ul li a {
 }
 
 header ul li a:hover {
-    background-color: #86290c;
+    background-color: #992a08;
     color: whitesmoke;
     transition: .2s ease-in-out;
     transition-delay: .3s;
 }
 
 .active {
-    background-color: #86290c;
+    background-color: #992a08;
     color: whitesmoke;
 }
 
@@ -139,7 +139,7 @@ header ul li a:hover {
 .banner {
     height: 100vh;
     width: 220vh;
-    background-image: url('../UTS/download (1).jpeg');
+    background-image: url('download (1).jpeg');
     background-size: cover;
     position: relative;
     display: flex;
@@ -172,7 +172,7 @@ section {
 section h3{
     text-align: center;
     padding:  20px 0;
-    color: #86290c;
+    color: #992a08;
     margin-bottom: 20px;
 }
  .about {
@@ -188,7 +188,7 @@ section h3{
 section h4 {
     text-align: center;
     padding:  20px 0;
-    color: #86290c;
+    color: #992a08;
     margin-bottom: 20px;
 }
 .about p{
@@ -220,9 +220,9 @@ section h4 {
     height: 100px;
     border: 3px solid white;
     border-radius: 50%;
-    border-top-color: #86290c;
-    border-right-color: #86290c;
-    border-bottom-color: #86290c;
+    border-top-color: #992a08;
+    border-right-color: #992a08;
+    border-bottom-color: #992a08;
     animation: puter .8s linear infinite;
  }
 
@@ -232,7 +232,7 @@ section h4 {
 
  /* label */
  .label {
-    background-color: #86290c;
+    background-color: #992a08;
     color: whitesmoke;
  }
 

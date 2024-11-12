@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* bagian atas */
+.medsos {
+    padding: 5px 0;
+    background-color: #86290c;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.medsos ul li {
+    display: inline-block;
+    color: #FFC300;
+    margin: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container:afer {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: #86290c;
+    font-size: 25px;
+    word-spacing: 2px;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    padding: 25px 20px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    background-color: #86290c;
+    color: whitesmoke;
+    transition: .2s ease-in-out;
+    transition-delay: .3s;
+}
+
+.active {
+    background-color: #86290c;
+    color: whitesmoke;
+}
+
+.gambar {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+}
+
+
+.gambar .foto img{
+    width: 300px;
+}
+
+.foto {
+    border: 1px solid orange;
+    margin: 1px;
+    text-align: center;
+}
+
+.foto a {
+    border: 1px solid rgb(212, 175, 94);
+    padding: 1px;
+    color: peachpuff;
+    background-color: peru;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    margin: 20px;
+    color: white;
+    background: rgb(15, 15, 15);
+    height: 70px;
+}
+.footer a {
+    padding-top: 20px;
+}
+
+.buku-tamu {
+    background-color: rgb(226, 219,219);
+    margin: 10px;
+    border: solid salmon 2px;
+}
+
+/* javascript jam digital */
+.jam_digital{
+    overflow: hidden;
+    width: 200px;
+    margin: 30px auto;
+    border: 5px solid rgb(229, 183, 238);
+    background-color: rgb(219, 213,219);
+}
+
+.kotak{
+    float: left;
+    height: 80px;
+    width: 60px;
+}
+
+.jam_digital p{
+    color: rgb(12, 48,48);
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* banner */
+.banner {
+    height: 100vh;
+    width: 220vh;
+    background-image: url('../UTS/download (1).jpeg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(205, 133, 63, .6);
+}
+
+.banner h2{
+    color: white;
+    z-index: 1;
+    padding: 20px 25px;
+    border:  3px solid white;
+}
+
+/* aboutmain.html */
+section {
+    padding: 50px 0;
+}
+
+section h3{
+    text-align: center;
+    padding:  20px 0;
+    color: #86290c;
+    margin-bottom: 20px;
+}
+ .about {
+    padding-bottom: 100px;
+ }
+
+ .about p{
+    color: #666;
+    word-spacing: 2px;
+    line-height: 25px;
+ }
+
+section h4 {
+    text-align: center;
+    padding:  20px 0;
+    color: #86290c;
+    margin-bottom: 20px;
+}
+.about p{
+    color: #666;
+    word-spacing: 2px;
+    line-height: 25px;
+ }
+ .container2{
+    padding: 10px;
+    text-align: center;
+ }
+
+ /* javascript loader */
+ .bg-loader {
+    background-color: #444;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .bg-loader .loader {
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+    border-top-color: #86290c;
+    border-right-color: #86290c;
+    border-bottom-color: #86290c;
+    animation: puter .8s linear infinite;
+ }
+
+ .buku-tamu {
+    border: black solid 2px;
+ }
+
+ /* label */
+ .label {
+    background-color: #86290c;
+    color: whitesmoke;
+ }
+
+ /* javascript loader */
+ @keyframes puter {
+    100%{
+        transform: rotate(360deg);
+    }
+
+ }
